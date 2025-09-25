@@ -1,0 +1,6 @@
+{
+	"files.encoding": "gbk",
+	"editor.tabSize": 4,
+	/*clangd*/
+	// 1.默认是clangd 
+}
