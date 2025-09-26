@@ -3,7 +3,7 @@
   "tasks": [
     /* ---------- CMake Configure (MinGW)---------- */
     {
-      "label": "CMake Configure ",
+      "label": "CMake Configure (MinGW)",
       "type": "shell",
       "command": "cmake",
       "args": [
@@ -17,16 +17,8 @@
         "kind": "build",
         "isDefault": false
       },
+	  "detail": " Configures the project for building with MinGW Makefiles.",
     },
-    /* ---------- CMake Build (MSVC)---------- */
-	{
-		"label": "CMake Build",
-		"type": "shell",
-		"command": "D:/Qt/Tools/QtCreator/bin",
-		"group": "none",
-		"problemMatcher": [],
-		"detail": "Opens the Qt Creator IDE.",
-	},
 	/* ---------- Open Qt Creator---------- */
 	{
 		"label": "Open Qt Creator",
@@ -67,7 +59,8 @@
       "group": {
         "kind": "build",
         "isDefault": false
-      }
+      },
+	  "detail": "Flashes the STM32F103C8T6 microcontroller using openOCD."
     },
   ]
 }
