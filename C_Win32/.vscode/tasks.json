@@ -62,5 +62,19 @@
       },
 	  "detail": "Flashes the STM32F103C8T6 microcontroller using openOCD."
     },
+    /* ---------- DOXYGEN ---------- */
+	{
+		"label": "DOXYGEN",
+		"type": "shell",
+		"command": "doxygen",
+		"args": [
+			"Doxyfile"
+		],
+		"group": {
+			"kind": "build",
+			"isDefault": false
+		},
+		"detail": "Generates documentation using doxygen."
+	},
   ]
 }

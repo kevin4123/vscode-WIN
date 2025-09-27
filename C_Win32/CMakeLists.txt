@@ -27,11 +27,11 @@ file(GLOB_RECURSE THIRD_PARTY_SOURCES
 set(ALL_SOURCES ${PROJECT_SOURCES} ${THIRD_PARTY_SOURCES})
 
 
-add_executable(hello ${ALL_SOURCES})
+add_executable(App ${ALL_SOURCES})
 #GUI application on Windows
-set_target_properties(hello PROPERTIES WIN32_EXECUTABLE ON)
+set_target_properties(App PROPERTIES WIN32_EXECUTABLE ON)
 #compiler option
-# target_compile_options(hello
-# 	PRIVATE
-# 	$<$<CXX_COMPILER_ID:MSVC>:/DUNICODE>
-# )
+target_compile_options(App
+	PRIVATE
+	$<$<CXX_COMPILER_ID:MSVC>:/DUNICODE>
+)
